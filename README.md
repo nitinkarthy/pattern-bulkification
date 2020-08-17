@@ -9,6 +9,24 @@ this style of coding can get difficult to read.
 
 ### Domain Model and Problem Statement
 
+```
+                                                                                     M:M       +----------------+
+                                                                                               |                |
+                                                                            +------------------>     PRODUCT    |
+                                                                            |                  |                |
+                                                                            |                  +----------------+
++----------------+      1:M      +----------------+   1:M     +-------------+--+
+|                |               |                |           |     DELIVERY   |
+|    CUSTOMER    +-------------->+      ORDER     +---------->+      ITEM      |
+|                |               |                |           |                |               +----------------+
++----------------+               +----------------+           +-------------+--+               |                |
+                                                                            |                  |     ADDRESS    |
+                                                                            +------------------>                |
+                                                                                               +----------------+
+                                                                                     M:M
+
+```
+
 ### 01 Naive Imperative Approach
 
 ### 02 Fluent Imperative Approach

@@ -19,7 +19,14 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <name>Clean API for Bulkification</name>  
   <url>https://github.com/nitinkarthy/pattern-bulkification</url>  
   
-  <dependencies>  
+  <dependencies>
+
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.18.12</version>
+          <scope>provided</scope>
+      </dependency>
 
     <dependency>
         <groupId>org.jooq</groupId>
